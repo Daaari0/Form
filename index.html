@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#">
+        <div id="container">
+            <header>
+                <h1>Registration Form</h1>
+                <p>Please fill out this form with the required information.</p>
+            </header>
+
+            <section id="personal-info">
+                <div>
+                    Enter Your First Name:
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div>
+                    Enter Your Last Name:
+                    <br>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div>
+                    Enter Your Email Address:
+                    <input type="email" placeholder="example@somehting.yet" required>
+                </div>
+                <div>
+                    Create Your Password:
+                    <input type="password" placeholder="Insert password" minlength="8">
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="Account">
+                <div>Account Type</div>
+                <input type="radio" id="Personal" name="account-type" value="Personal" checked>Personal
+                <br>
+                <input type="radio" id="Business" name="account-type" value="Business">Business
+            </section>
+
+            <hr>
+
+            <section id="additional-info">
+                <div>
+                    Upload a profile picture:
+                    <input type="file" class="input-box">
+                </div>
+
+
+                <div>
+                    Input your age (years):
+                    <input type="number" max="120" min="13" required>
+                </div>
+
+                <div>
+                    How did you hear about us?
+                    <br>
+                    <select name="hear-us-from" id="hear">
+                        <option value="/" selected>Can't say</option>
+                        <option value="FB">Facebook</option>
+                        <option value="Ing">Instagram</option>
+                        <option value="Lkn">Linkdin</option>
+                    </select>
+                </div>
+
+                <div>
+                    Provide a bio:
+                    <textarea name="bio" id="bio" placeholder="I like coding on the beach..."></textarea>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <footer>
+                <div class="policy-quest">
+                    <input type="checkbox" name="policy" id="policy" required> I accept the <a href="#">terms and
+                        conditions</a>
+                </div>
+
+                <div id="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>

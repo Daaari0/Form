@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b32;
+}
+
+#container {
+    background-color: #232342;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 150px;
+    border: 1px solid black;
+    font-family: "Roboto", sans-serif;
+    color: #f5f6f7;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    margin: 30px 0px;
+    background-color: #0a0a23;
+    border: none;
+    border-top: 1px solid black;
+}
+
+header {
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+
+header>h1 {
+    margin: 15px 0;
+    font-size: 50px;
+}
+
+header>p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+/* Basic settings for the div elements */
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+*:focus {
+    box-shadow: 0 0 0 0.25rem #f5f6f73b;
+    border-radius: 0.5px 5px;
+}
+
+
+/* Selects all input with attribute type */
+#personal-info input[type],
+.input-box,
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    min-height: 30px;
+
+    margin-top: 3px;
+    padding-left: 5px;
+
+    background-color: #0a0a23;
+    color: #f5f6f7;
+    border: none;
+}
+
+
+/* Other settings for inputs */
+#personal-info input[type],
+.input-box,
+input[type="number"] {
+    line-height: 30px;
+}
+
+#Account input[type] {
+    margin: 5px 10px 0 0;
+}
+
+select {
+    border: #f5f6f7 1px solid;
+}
+
+select option:hover {
+    background-color: #f5f6f7;
+    color: #0a0a23;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 60px;
+}
+
+/* Checkbox for policy and submit */
+footer {
+    margin-top: 30px;
+}
+
+.policy-quest a {
+    color: #f5f6f7;
+    text-decoration: underline;
+}
+
+
+/* Submit button/section settings */
+#submit {
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 50%;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: #3b3b4f;
+    color: #f5f6f7;
+    border: 1px solid #f5f6f7;
+}
+
+input[type="submit"]:hover {
+    background-color: #f5f6f7;
+    color: #0a0a23;
+    border: 1px solid #0a0a23;
+}
